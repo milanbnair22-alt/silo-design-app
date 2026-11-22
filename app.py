@@ -20,7 +20,7 @@ st.set_page_config(page_title="RC Coal Silo Design", page_icon="🏗", layout="w
 # ------------------------------------------------------------
 # STYLE
 # ------------------------------------------------------------
-C_PH, C_PV, C_FR, C_STEEL, C_BLUE = "#c0503f", "#2f6f9f", "#3d8b5e", "#d38b0b", "#2f6f9f"
+C_PH, C_PV, C_FR, C_STEEL, C_BLUE = "#b45309", "#0e7490", "#15803d", "#a16207", "#0e7490"
 FONT = "Segoe UI, Helvetica Neue, Arial, sans-serif"
 
 st.markdown(
@@ -124,6 +124,36 @@ button[data-baseweb="tab"] {font-weight:600;}
 [data-testid="stMain"] [data-baseweb="select"] > div {
     background-color: #ffffff !important;
 }
+
+/* Distinct editorial / industrial design theme */
+.stApp {background: #f7f4ec !important;}
+[data-testid="stMain"] {background: #f7f4ec !important;}
+.block-container {max-width: 1580px; padding-top: 2.2rem;}
+.hero {border-bottom: 3px solid #0e7490; padding: 1.1rem 1.25rem 1rem;
+       margin-bottom: 1.2rem; background: #e8eee9; border-radius: 12px 12px 0 0;}
+.hero h1 {color: #173b35 !important; letter-spacing: -0.035em; font-size: 2.15rem;}
+.hero p {color: #52665f !important;}
+.kpi {background: #fffdf8; border: 1px solid #e4ded1; border-left: 5px solid var(--c);
+      border-radius: 12px; box-shadow: 0 3px 12px rgba(34,52,45,.045);}
+.kpi.blue {--c:#0e7490;} .kpi.red {--c:#b45309;} .kpi.amber {--c:#a16207;} .kpi.green {--c:#15803d;}
+.kpi-label {color:#61736a !important; text-transform:uppercase; letter-spacing:.055em; font-size:.75rem;}
+.kpi-value {color:#173b35 !important;}
+.kpi-unit,.kpi-note {color:#61736a !important;}
+.panel-title {color:#173b35 !important;}
+.rt {background:#fffdf8; border-color:#e4ded1; border-radius:10px; overflow:hidden;}
+.rt th {background:#e8eee9; color:#173b35;}
+.rt td {color:#283e37; border-top-color:#eee8dc;}
+.rt tr.hl td {background:#f5e9d5;}
+[data-testid="stPlotlyChart"] {border:1px solid #e4ded1; border-radius:12px; box-shadow:0 2px 10px rgba(34,52,45,.04);}
+section[data-testid="stSidebar"] {background:#173b35 !important;}
+section[data-testid="stSidebar"] * {color:#e5eee8;}
+.side-title {color:#f8faf7 !important;}
+.side-sub {color:#b6c9be !important;}
+.side-h {color:#9fd3c5 !important; border-bottom-color:#315b50;}
+section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button {background:#e3b341;}
+section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button:hover {background:#f0c55d;}
+[data-testid="stTabs"] button[aria-selected="true"], [data-baseweb="tab"][aria-selected="true"] {color:#0e7490 !important;}
+[data-testid="stTabs"] [data-baseweb="tab-highlight"] {background-color:#0e7490 !important;}
 
 </style>
 """,
