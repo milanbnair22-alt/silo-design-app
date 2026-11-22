@@ -15,7 +15,7 @@ from plotly.subplots import make_subplots
 
 import silo_calc as sc
 
-st.set_page_config(page_title="RC Coal Silo Design", page_icon="🏗", layout="wide")
+st.set_page_config(page_title="RC Coal Silo Design", page_icon="📐", layout="wide")
 
 # ------------------------------------------------------------
 # STYLE
@@ -154,6 +154,33 @@ section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button {back
 section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button:hover {background:#f0c55d;}
 [data-testid="stTabs"] button[aria-selected="true"], [data-baseweb="tab"][aria-selected="true"] {color:#0e7490 !important;}
 [data-testid="stTabs"] [data-baseweb="tab-highlight"] {background-color:#0e7490 !important;}
+
+/* restrained, hand-built engineering interface */
+.stApp, [data-testid="stMain"] {background:#f1f3f4 !important;}
+.block-container {max-width:1450px !important; padding-top:1.1rem !important;}
+.hero {background:transparent !important; border-radius:0 !important; border-bottom:1px solid #9aa6af !important;
+       border-top:4px solid #172a3a !important; padding:.65rem 0 .8rem !important; margin-bottom:1rem !important;}
+.hero h1 {font-size:1.75rem !important; letter-spacing:0 !important; font-weight:650 !important; color:#172a3a !important;}
+.hero p {font-size:.85rem !important; color:#65727b !important;}
+section[data-testid="stSidebar"] {background:#172a3a !important;}
+section[data-testid="stSidebar"] * {color:#e4e9ec !important;}
+.side-title {font-size:1.08rem !important; font-weight:600 !important;}
+.side-h {color:#c0cbd2 !important; border-bottom:1px solid #52616b !important; text-transform:uppercase;
+         letter-spacing:.04em; font-size:.75rem !important;}
+section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button {background:#f0b44b !important; border-radius:3px !important;}
+.kpi {background:#fff !important; border:1px solid #cbd2d7 !important; border-left:3px solid var(--c) !important;
+      border-radius:3px !important; box-shadow:none !important; padding:.65rem .8rem !important;}
+.kpi-label {text-transform:none !important; letter-spacing:0 !important; font-size:.82rem !important; color:#65727b !important;}
+.kpi-value {font-size:1.45rem !important; color:#172a3a !important; font-weight:600 !important;}
+.kpi-note,.kpi-unit {color:#65727b !important;}
+.panel-title {font-size:.94rem !important; font-weight:600 !important; color:#172a3a !important;}
+.rt {border-radius:0 !important; box-shadow:none !important; border:1px solid #cbd2d7 !important;}
+.rt th {background:#e1e6e9 !important; font-weight:600 !important;}
+.rt tr.hl td {background:#f6edda !important;}
+[data-testid="stPlotlyChart"] {border:1px solid #cbd2d7 !important; border-radius:3px !important; box-shadow:none !important; padding:0 !important;}
+[data-testid="stTabs"] button {font-size:.88rem !important; font-weight:500 !important;}
+[data-testid="stTabs"] button[aria-selected="true"], [data-baseweb="tab"][aria-selected="true"] {color:#172a3a !important;}
+[data-testid="stTabs"] [data-baseweb="tab-highlight"] {background:#f0b44b !important;}
 
 </style>
 """,
