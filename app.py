@@ -168,7 +168,7 @@ section[data-testid="stSidebar"] * {color:#e4e9ec !important;}
 .side-h {color:#c0cbd2 !important; border-bottom:1px solid #52616b !important; text-transform:uppercase;
          letter-spacing:.04em; font-size:.75rem !important;}
 section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button {background:#f0b44b !important; border-radius:3px !important;}
-.kpi {background:#fff !important; border:1px solid #cbd2d7 !important; border-left:3px solid var(--c) !important;
+.kpi {background:#fff !important; border:1px solid #cbd2d7 !important; border-left:1px solid #cbd2d7 !important;
       border-radius:3px !important; box-shadow:none !important; padding:.65rem .8rem !important;}
 .kpi-label {text-transform:none !important; letter-spacing:0 !important; font-size:.82rem !important; color:#65727b !important;}
 .kpi-value {font-size:1.45rem !important; color:#172a3a !important; font-weight:600 !important;}
