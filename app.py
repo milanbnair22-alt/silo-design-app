@@ -78,6 +78,53 @@ section[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button:hover
 
 [data-testid="stPlotlyChart"] {background:#fff; border:1px solid #dbe2e8; border-radius:6px; padding:.25rem;}
 button[data-baseweb="tab"] {font-weight:600;}
+
+/* Main-area contrast repair: force readable foregrounds on the light canvas */
+.stApp, [data-testid="stMain"] { color: #1e293b !important; }
+[data-testid="stMain"] p, [data-testid="stMain"] label,
+[data-testid="stMain"] li, [data-testid="stMain"] small,
+[data-testid="stMain"] [data-testid="stMarkdown"] p,
+[data-testid="stMain"] [data-testid="stCaptionContainer"],
+[data-testid="stMain"] [data-testid="stWidgetLabel"] p,
+[data-testid="stMain"] [data-testid="stWidgetLabel"] label,
+[data-testid="stMain"] [data-testid="stHelpTooltip"] {
+    color: #334155 !important;
+}
+/* Tab labels, including inactive tabs */
+[data-testid="stTabs"] button, [data-baseweb="tab"] {
+    color: #334155 !important;
+    opacity: 1 !important;
+}
+[data-testid="stTabs"] button[aria-selected="true"],
+[data-baseweb="tab"][aria-selected="true"] {
+    color: #c0503f !important;
+}
+/* Checkbox and radio text */
+[data-testid="stCheckbox"] label, [data-testid="stRadio"] label,
+[data-testid="stCheckbox"] p, [data-testid="stRadio"] p,
+[data-testid="stCheckbox"] span, [data-testid="stRadio"] span {
+    color: #334155 !important;
+}
+/* Text within widgets and controls */
+[data-testid="stMain"] input, [data-testid="stMain"] textarea,
+[data-testid="stMain"] [data-baseweb="select"] div,
+[data-testid="stMain"] [data-baseweb="input"] div {
+    color: #1e293b !important;
+    -webkit-text-fill-color: #1e293b !important;
+}
+/* Slider labels and tick text */
+[data-testid="stMain"] [data-testid="stSlider"] *,
+[data-testid="stMain"] [data-testid="stNumberInput"] *,
+[data-testid="stMain"] [data-testid="stSelectbox"] *,
+[data-testid="stMain"] [data-testid="stTextInput"] * {
+    color: #334155 !important;
+}
+/* Keep input backgrounds light */
+[data-testid="stMain"] input, [data-testid="stMain"] textarea,
+[data-testid="stMain"] [data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+}
+
 </style>
 """,
     unsafe_allow_html=True,
