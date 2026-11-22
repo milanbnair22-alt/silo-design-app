@@ -1,0 +1,5 @@
+streamlit>=1.50
+numpy>=1.24
+pandas>=2.0
+plotly>=5.18
+matplotlib>=3.7   # only needed to run the original silo_design.py and the verification test

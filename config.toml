@@ -1,0 +1,13 @@
+[server]
+headless = false          # opens the browser automatically
+runOnSave = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#2f6f9f"
+backgroundColor = "#f2f4f6"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#15222e"
